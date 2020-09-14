@@ -62,3 +62,8 @@ spring:
         event-out:
           destination: cook
           contentType: application/json
+logging:
+  level:
+    org.hibernate.type: trace
+    org.springframework.cloud: debug
+  file: /mnt/aws/logs/delivery-application.log
